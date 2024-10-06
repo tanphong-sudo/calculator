@@ -7,6 +7,13 @@ function clearDisplay() {
 }
 
 function showMessage() {
-    alert("Hello world");
+    // Chỉ hiển thị modal khi nhấn dấu =
+    var modal = document.getElementById("customAlert");
+    modal.style.display = "flex";
+}
+
+function closeAlert() {
+    var modal = document.getElementById("customAlert");
+    modal.style.display = "none";
     clearDisplay();
 }
